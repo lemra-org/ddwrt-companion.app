@@ -1,10 +1,11 @@
+dist: bionic
 language: python
 python:
  - "3.8"
 addons:
   apt:
     packages:
-      - openjdk-11-jre  # install Java as required by vnu.jar
+      - openjdk-11-jdk  # install Java as required by vnu.jar
 
 branches:
   only:
