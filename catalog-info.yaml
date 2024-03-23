@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ddwrt-companion.app
+  annotations:
+    github.com/project-slug: lemra-org/ddwrt-companion.app
+spec:
+  type: other
+  lifecycle: unknown
+  owner: lemra-org
