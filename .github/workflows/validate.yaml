@@ -1,0 +1,18 @@
+name: Validate
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: HTML5Validator
+        uses: Cyb3r-Jak3/html5validator-action@41633d488eb36e18fd1a95ffc83daf1bf22a75bd #v7.2.0
+        with:
+          config: ./website/.html5validator.yaml
+          root: website/

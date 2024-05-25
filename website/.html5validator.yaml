@@ -1,0 +1,9 @@
+root: .
+errors_only: True
+log: DEBUG
+# ignore_re:
+ignore:
+  - 'Attribute "webkitallowfullscreen" not allowed'
+  - 'Attribute "mozallowfullscreen" not allowed'
+  - 'The "frameborder" attribute on the "iframe" element is obsolete'
+  - 'No "p" element in scope but a "p" end tag seen'
